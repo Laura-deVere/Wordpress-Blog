@@ -1,0 +1,64 @@
+/*
+	Theme Name: Basic Blog Theme
+	Author: Laura deVere-Hopkins
+	Version: 1.0
+*/
+
+@import "_partials/variables";
+
+@import "modules/header";
+@import "modules/social-icons-list";
+@import "modules/main-hero";
+@import "modules/main-recent-posts";
+@import "modules/about-pg";
+@import "modules/gallery";
+@import "modules/single-blog-post";
+@import "modules/single-post-list";
+@import "modules/comments";
+@import "modules/contact-form";
+@import "modules/fallback-search";
+@import "modules/side-bar";
+@import "modules/footer";
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: $base-font-family;
+}
+
+a {
+	text-decoration: none;
+	color: $almostBlack;
+}
+
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.container {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	>p {
+		text-align: center;
+	}
+}
+
+@media only screen
+  and (min-device-width: 768px)  {
+  	body { 
+  		display: flex;
+  		flex-wrap: wrap;
+  	}
+  	.container {
+  		width: 75%;
+  	}
+  	.side-bar-right-container {
+  		width: 20%;
+  	}
+}

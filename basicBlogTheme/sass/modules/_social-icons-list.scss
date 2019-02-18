@@ -1,0 +1,10 @@
+.social-links ul {
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	a {
+		color: $almostBlack;
+		font-size: 1.3em;
+		padding: 15px;
+	}
+}

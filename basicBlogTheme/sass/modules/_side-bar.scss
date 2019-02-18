@@ -1,0 +1,140 @@
+.side-bar-right-container {
+	max-width: 100%;
+	padding: 17px;
+	h3 {
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+}
+
+.text-box-right {
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	>div, >img {
+		height: auto;
+    	max-width: 100%;
+	}
+}
+
+.side-bar-social {
+	display: flex;
+	justify-content: center;
+}
+
+.category-list-right {
+	margin-top: 60px; 
+	ul {
+		text-transform: uppercase;
+		list-style: none;
+		padding: 0;
+		width: 90%;
+		li {
+			padding: 15px 15px 15px 0;
+			border-bottom: 1px solid $lighter-beige;
+		}
+	}
+}
+
+.latest-posts-right {
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	>div {
+		width: 100%;
+	}
+}
+
+.single-post-right {
+	margin-top: 39px;
+    display: flex;
+    max-height: 146px;
+	img {
+	    max-width: 40%;
+	    margin-right: 12px;
+	    height: auto;
+	}
+	>div {
+		max-width: 55%;
+		display: inline-block;
+		font-size: 0.8em;
+		h4, p {
+			margin: 0;
+			padding-bottom: 5px;
+		}
+		h4, p:nth-child(2) {
+			text-transform: uppercase;
+		}
+		p:nth-child(2) {
+			color: $gray;
+		}
+	}	
+}
+
+.right-search {
+	width: 90%;
+	input[type="text"] {
+		width: 90%;
+		border: 1px solid $beige;
+		padding: 7px 7px 7px 7px;
+		font-size: .9em;
+		/*color: $beige;*/
+		margin-bottom: 5px;
+		margin-left: 26px;
+	}
+	input[type="text"]:focus {
+		outline: 1px solid $lighter-beige;
+	}
+	input[type="submit"] {    
+		font-family: "Montserrat", sans-serif;
+		background-color: $beige;
+		display: flex;
+		justify-content: center;
+		color: #fff;
+		padding: 7px;
+		font-size: 0.5em;
+	}
+}
+
+.input-container {
+	/*display: flex;*/
+	width: 100%;
+	position: relative;
+	i {
+		padding: 7px;
+	    max-height: 19px;
+	    color: #fff;
+	    background-color: $beige;
+	    text-align: center;
+	    position: absolute;
+	}
+}
+
+#form-submit {
+	background: transparent;
+	border: 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 12px;
+}
+
+#results-box {
+	ul {
+		list-style: none;
+		padding-left: 0;
+		max-height: 200px;
+		overflow: scroll;
+		cursor: all-scroll;
+		li {
+		    width: 100%;
+		    border-bottom: 1px solid $beige;
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+		}
+	}
+}
+
+
+

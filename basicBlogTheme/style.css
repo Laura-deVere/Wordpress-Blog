@@ -1,0 +1,678 @@
+/*
+	Theme Name: Basic Blog Theme
+	Author: Laura deVere-Hopkins
+	Version: 1.0
+*/
+/*BODY COLORS*/
+/* line 1, sass/modules/_header.scss */
+header {
+  border-bottom: 1px solid #d6cdc2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* line 8, sass/modules/_header.scss */
+.nav-container {
+  width: 100%;
+  min-height: 100px;
+  min-height: 80px;
+  padding-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-transition: background-color 0.7s;
+  -ms-transition: background-color 0.7s;
+  -o-transition: background-color 0.7s;
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s ease;
+}
+
+/* line 24, sass/modules/_header.scss */
+.web-nav {
+  /*display: none;*/
+  display: flex;
+  order: 3;
+  width: 100%;
+  -moz-transition: height 1s;
+  -ms-transition: height 1s;
+  -o-transition: height 1s;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  height: 0;
+  overflow: hidden;
+}
+/* line 36, sass/modules/_header.scss */
+.web-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+/* line 40, sass/modules/_header.scss */
+.web-nav ul li {
+  padding: 18px;
+}
+/* line 42, sass/modules/_header.scss */
+.web-nav ul li a {
+  text-transform: uppercase;
+}
+
+/* line 49, sass/modules/_header.scss */
+.mobile-nav {
+  color: #222;
+  font-size: 1.2em;
+  padding: 16px 20px;
+  width: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) {
+  /* line 59, sass/modules/_header.scss */
+  .nav-container {
+    min-height: 64px;
+    padding-top: 0px;
+    font-size: 0.9em;
+  }
+
+  /* line 64, sass/modules/_header.scss */
+  .mobile-nav {
+    display: none;
+  }
+
+  /* line 67, sass/modules/_header.scss */
+  .web-nav {
+    /*height: 100px;*/
+    width: 50%;
+    order: 1;
+    overflow: unset;
+  }
+  /* line 72, sass/modules/_header.scss */
+  .web-nav ul {
+    flex-direction: row;
+  }
+  /* line 74, sass/modules/_header.scss */
+  .web-nav ul li {
+    padding: 9px;
+  }
+
+  /* line 79, sass/modules/_header.scss */
+  #menu-list {
+    margin-left: 10px;
+    padding: 0;
+  }
+
+  /* line 83, sass/modules/_header.scss */
+  #header-social-links {
+    order: 3;
+    padding-top: 5px;
+    margin-right: 10px;
+  }
+}
+/* line 1, sass/modules/_social-icons-list.scss */
+.social-links ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+}
+/* line 5, sass/modules/_social-icons-list.scss */
+.social-links ul a {
+  color: #222;
+  font-size: 1.3em;
+  padding: 15px;
+}
+
+/* line 1, sass/modules/_main-hero.scss */
+.main-hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+/* line 6, sass/modules/_main-hero.scss */
+.main-hero h1 {
+  margin-bottom: 0;
+  margin-top: 60px;
+}
+/* line 10, sass/modules/_main-hero.scss */
+.main-hero p {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-style: italic;
+  text-transform: lowercase;
+}
+/* line 16, sass/modules/_main-hero.scss */
+.main-hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 2, sass/modules/_main-recent-posts.scss */
+.main-new-posts {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+/* line 8, sass/modules/_main-recent-posts.scss */
+.main-new-posts li {
+  width: 40%;
+  margin: 0 17px 30px 17px;
+}
+/* line 12, sass/modules/_main-recent-posts.scss */
+.main-new-posts img {
+  width: 100%;
+  height: auto;
+}
+/* line 16, sass/modules/_main-recent-posts.scss */
+.main-new-posts h3 {
+  font-size: 1.5em;
+}
+/* line 19, sass/modules/_main-recent-posts.scss */
+.main-new-posts h2 {
+  font-size: 1em;
+  padding-top: 15px;
+}
+/* line 23, sass/modules/_main-recent-posts.scss */
+.main-new-posts h2, .main-new-posts h3 {
+  font-weight: normal;
+}
+/* line 26, sass/modules/_main-recent-posts.scss */
+.main-new-posts h2, .main-new-posts h3, .main-new-posts a {
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 30, sass/modules/_main-recent-posts.scss */
+.main-new-posts h3 > a {
+  border-bottom: 1px solid #d6cdc2;
+  padding-bottom: 15px;
+}
+/* line 34, sass/modules/_main-recent-posts.scss */
+.main-new-posts a {
+  font-size: .7em;
+}
+
+/* line 39, sass/modules/_main-recent-posts.scss */
+.read-more-link {
+  background-color: #d6cdc2;
+  height: 15px;
+  padding: 15px;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+}
+/* line 46, sass/modules/_main-recent-posts.scss */
+.read-more-link a, .read-more-link i {
+  color: white;
+}
+/* line 49, sass/modules/_main-recent-posts.scss */
+.read-more-link > a {
+  font-size: .9em;
+  letter-spacing: .2em;
+}
+
+/* line 2, sass/modules/_about-pg.scss */
+.page-id-11 p {
+  width: 90%;
+  margin: 30px auto;
+}
+
+/* line 1, sass/modules/_gallery.scss */
+#gallery-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* line 9, sass/modules/_gallery.scss */
+#gallery-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+/* line 15, sass/modules/_gallery.scss */
+#gallery-list img {
+  height: 100px;
+  width: 100px;
+  margin: 0 10px 10px 0;
+}
+
+/* line 22, sass/modules/_gallery.scss */
+#selected-img-container {
+  width: 100%;
+}
+/* line 24, sass/modules/_gallery.scss */
+#selected-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 1, sass/modules/_single-blog-post.scss */
+.single-BP {
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 4, sass/modules/_single-blog-post.scss */
+.single-BP h1, .single-BP a:first-child {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 9, sass/modules/_single-blog-post.scss */
+.single-BP h1 {
+  margin: 0;
+}
+/* line 12, sass/modules/_single-blog-post.scss */
+.single-BP > h3 {
+  padding: 7px;
+  border-bottom: 1px solid #d6cdc2;
+  margin: 60px 125px 10px 125px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 20, sass/modules/_single-blog-post.scss */
+.single-BP img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 24, sass/modules/_single-blog-post.scss */
+.single-BP > p {
+  margin: 13px;
+}
+
+/* line 29, sass/modules/_single-blog-post.scss */
+.author-link {
+  text-align: center;
+  color: #ccc;
+  text-transform: uppercase;
+}
+/* line 33, sass/modules/_single-blog-post.scss */
+.author-link a {
+  color: #ccc;
+}
+
+/* line 1, sass/modules/_single-post-list.scss */
+.single-post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 1, sass/modules/_comments.scss */
+.comments-area {
+  border-top: 3px solid #d6cdc2;
+}
+
+/* line 5, sass/modules/_comments.scss */
+.comment-title {
+  text-transform: uppercase;
+}
+
+/* line 9, sass/modules/_comments.scss */
+.comment-list {
+  list-style: none;
+  padding-left: 0px;
+}
+
+/* line 14, sass/modules/_comments.scss */
+.comment {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* line 20, sass/modules/_comments.scss */
+.comment-meta {
+  padding: 0;
+  align-items: flex-start;
+}
+
+/* line 25, sass/modules/_comments.scss */
+.comment-content p {
+  margin-left: 0;
+}
+
+/* line 30, sass/modules/_comments.scss */
+.comment-metadata a {
+  color: #ccc;
+}
+
+/* line 34, sass/modules/_comments.scss */
+.reply a {
+  color: #ccc;
+}
+
+/* line 39, sass/modules/_comments.scss */
+#reply-title {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: !important left;
+}
+
+/* line 45, sass/modules/_comments.scss */
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+}
+/* line 48, sass/modules/_comments.scss */
+.comment-form-comment textarea {
+  border: 2px solid #d6cdc2;
+  font-size: 1.5em;
+  padding: 7px;
+}
+/* line 53, sass/modules/_comments.scss */
+.comment-form-comment textarea:focus {
+  outline: none;
+}
+
+/* line 58, sass/modules/_comments.scss */
+.comment-form-email,
+.comment-form-author,
+.comment-form-url {
+  display: flex;
+  flex-direction: column;
+}
+/* line 63, sass/modules/_comments.scss */
+.comment-form-email input,
+.comment-form-author input,
+.comment-form-url input {
+  border: 2px solid #d6cdc2;
+  font-size: 1.2em;
+  padding: 7px;
+}
+/* line 68, sass/modules/_comments.scss */
+.comment-form-email input:focus,
+.comment-form-author input:focus,
+.comment-form-url input:focus {
+  outline: none;
+}
+
+/* line 73, sass/modules/_comments.scss */
+.form-submit > input[type="submit"] {
+  background-color: #d6cdc2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 7px;
+  font-size: 0.8em;
+}
+
+/* line 1, sass/modules/_contact-form.scss */
+.contact-form {
+  width: 90%;
+  margin: 0 auto;
+}
+/* line 4, sass/modules/_contact-form.scss */
+.contact-form input[type="submit"] {
+  color: #fff;
+  background-color: #c2b4a3;
+  width: auto;
+  padding: 9px;
+}
+/* line 10, sass/modules/_contact-form.scss */
+.contact-form input, .contact-form textarea {
+  font-size: 1em;
+  padding: 5px;
+  border: 1px solid #c2b4a3;
+  width: 90%;
+  color: #c2b4a3;
+}
+/* line 17, sass/modules/_contact-form.scss */
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+}
+/* line 20, sass/modules/_contact-form.scss */
+.contact-form label, .contact-form input[type="submit"] {
+  text-transform: uppercase;
+}
+
+/* line 1, sass/modules/_fallback-search.scss */
+.fallback-search-box {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+}
+/* line 8, sass/modules/_fallback-search.scss */
+.fallback-search-box form {
+  width: 85%;
+}
+/* line 11, sass/modules/_fallback-search.scss */
+.fallback-search-box input {
+  width: 100%;
+  border: 1px solid #d6cdc2;
+  padding: 7px;
+  font-size: .9em;
+  margin-bottom: 5px;
+  margin-left: 26px;
+}
+
+/* line 1, sass/modules/_side-bar.scss */
+.side-bar-right-container {
+  max-width: 100%;
+  padding: 17px;
+}
+/* line 4, sass/modules/_side-bar.scss */
+.side-bar-right-container h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 10, sass/modules/_side-bar.scss */
+.text-box-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 15, sass/modules/_side-bar.scss */
+.text-box-right > div, .text-box-right > img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* line 21, sass/modules/_side-bar.scss */
+.side-bar-social {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 26, sass/modules/_side-bar.scss */
+.category-list-right {
+  margin-top: 60px;
+}
+/* line 28, sass/modules/_side-bar.scss */
+.category-list-right ul {
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+}
+/* line 33, sass/modules/_side-bar.scss */
+.category-list-right ul li {
+  padding: 15px 15px 15px 0;
+  border-bottom: 1px solid #c2b4a3;
+}
+
+/* line 40, sass/modules/_side-bar.scss */
+.latest-posts-right {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 44, sass/modules/_side-bar.scss */
+.latest-posts-right > div {
+  width: 100%;
+}
+
+/* line 49, sass/modules/_side-bar.scss */
+.single-post-right {
+  margin-top: 39px;
+  display: flex;
+  max-height: 146px;
+}
+/* line 53, sass/modules/_side-bar.scss */
+.single-post-right img {
+  max-width: 40%;
+  margin-right: 12px;
+  height: auto;
+}
+/* line 58, sass/modules/_side-bar.scss */
+.single-post-right > div {
+  max-width: 55%;
+  display: inline-block;
+  font-size: 0.8em;
+}
+/* line 62, sass/modules/_side-bar.scss */
+.single-post-right > div h4, .single-post-right > div p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+/* line 66, sass/modules/_side-bar.scss */
+.single-post-right > div h4, .single-post-right > div p:nth-child(2) {
+  text-transform: uppercase;
+}
+/* line 69, sass/modules/_side-bar.scss */
+.single-post-right > div p:nth-child(2) {
+  color: #ccc;
+}
+
+/* line 75, sass/modules/_side-bar.scss */
+.right-search {
+  width: 90%;
+}
+/* line 77, sass/modules/_side-bar.scss */
+.right-search input[type="text"] {
+  width: 90%;
+  border: 1px solid #d6cdc2;
+  padding: 7px 7px 7px 7px;
+  font-size: .9em;
+  /*color: $beige;*/
+  margin-bottom: 5px;
+  margin-left: 26px;
+}
+/* line 86, sass/modules/_side-bar.scss */
+.right-search input[type="text"]:focus {
+  outline: 1px solid #c2b4a3;
+}
+/* line 89, sass/modules/_side-bar.scss */
+.right-search input[type="submit"] {
+  font-family: "Montserrat", sans-serif;
+  background-color: #d6cdc2;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 7px;
+  font-size: 0.5em;
+}
+
+/* line 100, sass/modules/_side-bar.scss */
+.input-container {
+  /*display: flex;*/
+  width: 100%;
+  position: relative;
+}
+/* line 104, sass/modules/_side-bar.scss */
+.input-container i {
+  padding: 7px;
+  max-height: 19px;
+  color: #fff;
+  background-color: #d6cdc2;
+  text-align: center;
+  position: absolute;
+}
+
+/* line 114, sass/modules/_side-bar.scss */
+#form-submit {
+  background: transparent;
+  border: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+}
+
+/* line 124, sass/modules/_side-bar.scss */
+#results-box ul {
+  list-style: none;
+  padding-left: 0;
+  max-height: 200px;
+  overflow: scroll;
+  cursor: all-scroll;
+}
+/* line 130, sass/modules/_side-bar.scss */
+#results-box ul li {
+  width: 100%;
+  border-bottom: 1px solid #d6cdc2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 1, sass/modules/_footer.scss */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  width: 100%;
+}
+
+/* line 23, sass/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 30, sass/style.scss */
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* line 35, sass/style.scss */
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* line 43, sass/style.scss */
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* line 47, sass/style.scss */
+.container > p {
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 768px) {
+  /* line 54, sass/style.scss */
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* line 58, sass/style.scss */
+  .container {
+    width: 75%;
+  }
+
+  /* line 61, sass/style.scss */
+  .side-bar-right-container {
+    width: 20%;
+  }
+}

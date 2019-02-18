@@ -1,0 +1,23 @@
+.contact-form {
+	width: 90%;
+	margin: 0 auto;
+	input[type="submit"] {
+		color: #fff;
+		background-color: $lighter-beige;
+		width: auto;
+		padding: 9px;
+	}
+	input, textarea {
+		font-size: 1em;
+	    padding: 5px;
+	    border: 1px solid $lighter-beige;
+	    width: 90%;
+	    color: $lighter-beige;
+	}
+	input:focus, textarea:focus {
+		outline: none;
+	}
+	label, input[type="submit"]  {
+		text-transform: uppercase;
+	}
+}

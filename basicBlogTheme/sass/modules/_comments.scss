@@ -1,0 +1,82 @@
+.comments-area {
+	border-top: 3px solid $beige;
+}
+
+.comment-title {
+	text-transform: uppercase;
+}
+
+.comment-list {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.comment {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.comment-meta {
+	padding: 0;
+	align-items: flex-start;
+}
+
+.comment-content p {
+	margin-left: 0;
+}
+
+.comment-metadata {
+	a {color: #ccc;}
+}
+
+.reply {
+	a {
+		color: #ccc;	
+	}
+}
+
+#reply-title {
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: !important left;
+}
+
+.comment-form-comment {
+	display: flex;
+	flex-direction: column;
+	textarea {
+		border: 2px solid $beige;
+		font-size: 1.5em;
+		padding: 7px;
+	}
+	textarea:focus {
+		outline: none;
+	}
+}
+
+.comment-form-email,
+.comment-form-author,
+.comment-form-url {
+	display: flex;
+	flex-direction: column;
+	input {
+		border: 2px solid $beige;
+		font-size: 1.2em;
+		padding: 7px;
+	}
+	input:focus {
+		outline: none;
+	}
+}
+
+.form-submit >input[type="submit"] {
+	background-color: $beige;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	padding: 7px;
+	font-size: 0.8em;
+}
+
